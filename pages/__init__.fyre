@@ -1,0 +1,17 @@
+from ..store import store
+import "../styles/index.css"
+
+def message():
+  return "World"
+
+<pyxide>
+  <div>
+    Hello, {message()}
+  </div>
+</pyxide>
+
+
+<script>
+  // this is the optional section 
+  // for third party scripts and custom js
+</script>
