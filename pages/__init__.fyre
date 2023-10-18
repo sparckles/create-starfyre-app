@@ -1,17 +1,17 @@
-from ..store import store
 import "../styles/index.css"
 
 def message():
-  return "World"
+  return "PyCon Mea"
+
+def handle_on_click(event):
+  print("Hello World")
+  alert("This was written in Python!!! :o")
 
 <pyxide>
-  <div>
-    Hello, {message()}
+  <div class="container">
+    <button class="message" onclick={handle_on_click} >
+      Hello, {message()}
+    </button>
   </div>
 </pyxide>
 
-
-<script>
-  // this is the optional section 
-  // for third party scripts and custom js
-</script>
