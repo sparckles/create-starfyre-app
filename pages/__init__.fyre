@@ -1,17 +1,16 @@
 import "../styles/index.css"
+from @.components.custom_button import custom_button
+
 
 def message():
-  return "PyCon Mea"
-
-def handle_on_click(event):
-  print("Hello World")
-  alert("This was written in Python!!! :o")
+  return "world 👋"
 
 <pyxide>
   <div class="container">
-    <button class="message" onclick={handle_on_click} >
+    <h1 class="message">
       Hello, {message()}
-    </button>
+    </h1>
+    <custom_button></custom_button>
   </div>
 </pyxide>
 

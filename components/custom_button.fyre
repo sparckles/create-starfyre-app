@@ -1,0 +1,14 @@
+---client
+[use_signal, set_signal, get_signal] = create_signal("⭐️")
+
+
+def handle_on_click(event):
+    if get_signal() == "⭐️":
+      set_signal("🔥")
+    else:
+      set_signal("⭐️")
+---
+
+<pyxide>
+    <button onclick={handle_on_click()}>{use_signal()}</button>
+</pyxide>

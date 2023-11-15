@@ -17,7 +17,6 @@ python3 -m starfyre --serve --path "."
 
 ```python
 # Path: pages/__init__.fyre
-from ..store import store
 import "../styles/index.css"
 
 def message():
